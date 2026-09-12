@@ -1,30 +1,49 @@
 # Sanjyot Pote — Portfolio
 
-A responsive, accessible personal portfolio focused on wireless communications, RF engineering, research, and selected technical work.
+A responsive personal portfolio focused on wireless communications, RF engineering, 5G, non-terrestrial networks, and selected hardware work.
 
-## Update the content
+## Files GitHub Pages needs
 
-Most repeatable content lives in `dist/site-data.js`:
+Upload every file from the website package directly into the root of `sanjyotpote.github.io`:
 
-- `experience` controls the career timeline.
-- `work` controls the filterable project and research cards.
-- `publications` controls the publication cards.
-- `contacts` controls the links in the contact section.
+- `index.html`
+- `styles.css`
+- `script.js`
+- `site-data.js`
+- `portrait-trail.webp`
+- `portrait-river.webp`
+- `Sanjyot_Pote_CV.pdf`
+- `PWM_Generator_Project_Report.pdf`
+- `ECE_60022_NTN_Survey_Paper_Sanjyot_Pote.pdf`
+- `README.md`
 
-Edit the main biography, education, leadership note, and life mission directly in `dist/index.html`.
+Do not upload the containing folder itself. The files should appear beside `index.html` in the repository root.
 
-## Publish with GitHub Pages
+## Make future content changes
 
-1. Create a new GitHub repository and upload this project.
-2. Make sure the default branch is named `main`.
-3. Open **Settings → Pages** in the repository.
-4. Under **Build and deployment**, choose **GitHub Actions**.
-5. Push a commit to `main`. The included workflow publishes the contents of `dist/` automatically.
+Open `site-data.js` on GitHub and click the pencil icon. This file controls:
 
-## Preview locally
+- `projects` — featured project explorer
+- `experience` — expandable work history
+- `writing` — publications and research papers
+- `contacts` — email and social links
 
-Open `dist/index.html` in a browser. For clipboard support and the closest production behavior, serve the folder with any local static server.
+Copy an existing item, change its text, keep the commas and brackets, then select **Commit changes**.
 
-## Contact-link placeholders
+Edit `index.html` only when changing the main biography, education, interests, GPA, or life aim. Edit `styles.css` for visual changes and `script.js` for interactions.
 
-GitHub and Gmail are intentionally hidden until their exact values are added to `dist/site-data.js`. This avoids publishing an incorrect or private address.
+## Replace a PDF or photo
+
+Upload the new file using the exact same filename and confirm **Commit changes**. GitHub will offer to replace the existing file. Keeping the filename unchanged prevents broken links.
+
+The résumé filename must remain exactly `Sanjyot_Pote_CV.pdf`.
+
+## GitHub Pages setting
+
+In the repository, open **Settings → Pages**. Under **Build and deployment**, use:
+
+- Source: **Deploy from a branch**
+- Branch: **main**
+- Folder: **/(root)**
+
+After each commit, allow GitHub Pages a few minutes to update, then hard-refresh the website.
